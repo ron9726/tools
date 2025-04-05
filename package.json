@@ -1,0 +1,42 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "tools": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "postinstall": "node ./postinstall.js"
+  },
+  "keywords": [],
+  "author": "zcr",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-spinners": "^2.9.2",
+    "commander": "^10.0.1",
+    "ora": "^5.4.1",
+    "sharp": "^0.33.5",
+    "tesseract.js": "^6.0.0",
+    "yargs-parser": "^21.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.5.0",
+    "prettier": "3.5.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "engines": {
+    "node": ">=12.22.12"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules
+bin/funcMapping.js
+bin/funcConfigMapping.js
+python-venv
+pnpm-lock.yaml
