@@ -62,7 +62,7 @@ module.exports = async function (loading) {
       data: { text },
     } = await worker.recognize(imagePath, { rotateAuto: true })
     setTimeout(() => {
-      console.log(text)
+      console.log((text || '').replace(/ /g, ''))
     }, 0)
     cleanup()
     await worker.terminate()
