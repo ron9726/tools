@@ -65,3 +65,6 @@ module.exports.config = {
   desc: 'desc',
 }
 ```
+# 外部依赖
+如果方法存在外部依赖，可以通过在方法的根目录创建depRequire.js文件，在这个文件中编写相应的依赖安装逻辑；depRequire.js中的逻辑会在npm包的postinstall阶段执行
+> 具体可以参考**simpleOCR**方法，该方法的depRequire文件涉及到三个python依赖(pillow，pywin32，pyobjc)
